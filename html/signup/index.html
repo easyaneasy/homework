@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입폼</title>
+</head>
+<body>
+
+    <h1>네이버 회원가입 폼</h1>
+
+    <form action="#">
+
+        <div>
+            <div>
+                <input type="text" id="id" name="id" placeholder="아이디" required>
+            </div>
+            <div>
+                <input type="text" id="pw" name="pw" placeholder="비밀번호" required>
+            </div>
+            <div>
+                <input type="email" id="email" name="email" placeholder="[선택] 이메일주소 (비밀번호 찾기 등 본인 확인용)" required>
+            </div>            
+        </div>
+        <br>
+        <div>
+            <div>
+                <input type="text" id="name" name="name" placeholder="이름" required>
+            </div>
+            <div>
+                <input type="text" id="birth" name="birth" placeholder="생년월일 8자리" required>
+            </div>
+            <div>
+                <select name="telecom" id="telecom">
+                    <option value="SKT">SKT</option>
+                    <option value="KT">KT</option>
+                    <option value="LG">LG</option>
+                </select>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <input type="radio" id="gender1" name="gender" value="M">
+                        <label for="gender1">남자</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="gender2" name="gender" value="W">
+                        <label for="gender2">여자</label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <input type="radio" id="foreigner1" name="foreigner" value="K">
+                        <label for="foreigner1">내국인</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="foreigner2" name="foreigner" value="F">
+                        <label for="foreigner2">외국인</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div>
+            <div>
+                <input type="tel" id="phoneNo" name="phoneNo" placeholder="휴대전화번호" required>
+            </div>
+        </div>
+        <div>
+            <input type="submit" id="submit" value="인증요청">
+            
+        </div>
+    </form>
+    
+</body>
+</html>
