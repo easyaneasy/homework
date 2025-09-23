@@ -88,14 +88,20 @@ let todosWithPriorityLabels;
 
 /* 로직 코드 작성 */
 todosWithPriorityLabels = originTodos.map((element) => {
-    if(element.priority === HIGH_PRIORITY){
-        element.text = `[긴급] ${element.text}`;
-    }else if(element.priority === MEDIUM_PRIORITY){
-        element.text = `[보통] ${element.text}`;
-    }else{
-        element.text = `[낮음] ${element.text}`;
-    }
-    return element;
+  let label;
+  if(element.priority === HIGH_PRIORITY){
+    label = "[긴급]";
+  }else if(element.priority === MEDIUM_PRIORITY){
+    label = "[보통]";
+  }else{
+    label = "[낮음]";
+  }
+ return{
+  ...element,
+  text: `${label} ${element.text}`
+ }
+    
+  
 });
 
 // 출력 코드
