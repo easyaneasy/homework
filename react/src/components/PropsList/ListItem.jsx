@@ -3,7 +3,7 @@ import React from 'react'
 export default function ListItem({list, onClick}) {
     return (
         <>
-            <div className='flex justify-center items-center font-bold text-2xl'>
+            <div className='flex justify-center items-center m-2 font-bold text-2xl'>
                 <p className='mr-2'>No. {list.id}</p>
                 <p className='mr-2'>{list.name}</p>
                 <button 
